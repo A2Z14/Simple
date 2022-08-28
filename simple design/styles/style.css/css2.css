@@ -1,0 +1,30 @@
+.accordion {
+  background-color: rgb(226, 221, 221);
+  color: rgb(202, 117, 74);
+  cursor: pointer;
+  padding: 18px;
+  width: 1000px;
+  text-align: left;
+  border: none;
+  transition: 1s;
+}
+.accordion.active,
+.accordion:hover {
+  background-color: darkgrey;
+}
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: 1s;
+}
+.panel.show {
+  display: block;
+}
+.father-accordion {
+  display: flex;
+  justify-content: center;
+}
+.father2-accordion {
+  display: flex;
+  flex-direction: column;
+}
